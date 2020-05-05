@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		130BED862461725A006DB125 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 130BED852461725A006DB125 /* main.c */; };
+		130BED942461C204006DB125 /* InputBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 130BED932461C204006DB125 /* InputBuffer.c */; };
+		130BED972461C3A6006DB125 /* Row.c in Sources */ = {isa = PBXBuildFile; fileRef = 130BED962461C3A6006DB125 /* Row.c */; };
+		130BED9A2461C462006DB125 /* Table.c in Sources */ = {isa = PBXBuildFile; fileRef = 130BED992461C462006DB125 /* Table.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		130BED822461725A006DB125 /* SimpleDatabase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SimpleDatabase; sourceTree = BUILT_PRODUCTS_DIR; };
 		130BED852461725A006DB125 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		130BED922461C204006DB125 /* InputBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputBuffer.h; sourceTree = "<group>"; };
+		130BED932461C204006DB125 /* InputBuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = InputBuffer.c; sourceTree = "<group>"; };
+		130BED952461C3A6006DB125 /* Row.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Row.h; sourceTree = "<group>"; };
+		130BED962461C3A6006DB125 /* Row.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Row.c; sourceTree = "<group>"; };
+		130BED982461C462006DB125 /* Table.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Table.h; sourceTree = "<group>"; };
+		130BED992461C462006DB125 /* Table.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Table.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				130BED852461725A006DB125 /* main.c */,
+				130BED922461C204006DB125 /* InputBuffer.h */,
+				130BED932461C204006DB125 /* InputBuffer.c */,
+				130BED952461C3A6006DB125 /* Row.h */,
+				130BED962461C3A6006DB125 /* Row.c */,
+				130BED982461C462006DB125 /* Table.h */,
+				130BED992461C462006DB125 /* Table.c */,
 			);
 			path = SimpleDatabase;
 			sourceTree = "<group>";
@@ -119,6 +134,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130BED9A2461C462006DB125 /* Table.c in Sources */,
+				130BED972461C3A6006DB125 /* Row.c in Sources */,
+				130BED942461C204006DB125 /* InputBuffer.c in Sources */,
 				130BED862461725A006DB125 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
