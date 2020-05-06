@@ -11,6 +11,8 @@
 		130BED942461C204006DB125 /* InputBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 130BED932461C204006DB125 /* InputBuffer.c */; };
 		130BED972461C3A6006DB125 /* Row.c in Sources */ = {isa = PBXBuildFile; fileRef = 130BED962461C3A6006DB125 /* Row.c */; };
 		130BED9A2461C462006DB125 /* Table.c in Sources */ = {isa = PBXBuildFile; fileRef = 130BED992461C462006DB125 /* Table.c */; };
+		135D9AF42462DF3A0034893D /* MetaCommand.c in Sources */ = {isa = PBXBuildFile; fileRef = 135D9AF32462DF3A0034893D /* MetaCommand.c */; };
+		135D9AF72462E0330034893D /* Statement.c in Sources */ = {isa = PBXBuildFile; fileRef = 135D9AF62462E0330034893D /* Statement.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,10 @@
 		130BED962461C3A6006DB125 /* Row.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Row.c; sourceTree = "<group>"; };
 		130BED982461C462006DB125 /* Table.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Table.h; sourceTree = "<group>"; };
 		130BED992461C462006DB125 /* Table.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Table.c; sourceTree = "<group>"; };
+		135D9AF22462DF3A0034893D /* MetaCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetaCommand.h; sourceTree = "<group>"; };
+		135D9AF32462DF3A0034893D /* MetaCommand.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MetaCommand.c; sourceTree = "<group>"; };
+		135D9AF52462E0330034893D /* Statement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Statement.h; sourceTree = "<group>"; };
+		135D9AF62462E0330034893D /* Statement.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Statement.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,10 @@
 				130BED962461C3A6006DB125 /* Row.c */,
 				130BED982461C462006DB125 /* Table.h */,
 				130BED992461C462006DB125 /* Table.c */,
+				135D9AF22462DF3A0034893D /* MetaCommand.h */,
+				135D9AF32462DF3A0034893D /* MetaCommand.c */,
+				135D9AF52462E0330034893D /* Statement.h */,
+				135D9AF62462E0330034893D /* Statement.c */,
 			);
 			path = SimpleDatabase;
 			sourceTree = "<group>";
@@ -135,9 +145,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				130BED9A2461C462006DB125 /* Table.c in Sources */,
+				135D9AF42462DF3A0034893D /* MetaCommand.c in Sources */,
 				130BED972461C3A6006DB125 /* Row.c in Sources */,
 				130BED942461C204006DB125 /* InputBuffer.c in Sources */,
 				130BED862461725A006DB125 /* main.c in Sources */,
+				135D9AF72462E0330034893D /* Statement.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
