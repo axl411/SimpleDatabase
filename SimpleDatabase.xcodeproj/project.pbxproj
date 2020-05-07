@@ -13,6 +13,7 @@
 		130BED9A2461C462006DB125 /* Table.c in Sources */ = {isa = PBXBuildFile; fileRef = 130BED992461C462006DB125 /* Table.c */; };
 		135D9AF42462DF3A0034893D /* MetaCommand.c in Sources */ = {isa = PBXBuildFile; fileRef = 135D9AF32462DF3A0034893D /* MetaCommand.c */; };
 		135D9AF72462E0330034893D /* Statement.c in Sources */ = {isa = PBXBuildFile; fileRef = 135D9AF62462E0330034893D /* Statement.c */; };
+		135D9AFA246307500034893D /* Pager.c in Sources */ = {isa = PBXBuildFile; fileRef = 135D9AF9246307500034893D /* Pager.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		135D9AF32462DF3A0034893D /* MetaCommand.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MetaCommand.c; sourceTree = "<group>"; };
 		135D9AF52462E0330034893D /* Statement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Statement.h; sourceTree = "<group>"; };
 		135D9AF62462E0330034893D /* Statement.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Statement.c; sourceTree = "<group>"; };
+		135D9AF8246307500034893D /* Pager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pager.h; sourceTree = "<group>"; };
+		135D9AF9246307500034893D /* Pager.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Pager.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				135D9AF32462DF3A0034893D /* MetaCommand.c */,
 				135D9AF52462E0330034893D /* Statement.h */,
 				135D9AF62462E0330034893D /* Statement.c */,
+				135D9AF8246307500034893D /* Pager.h */,
+				135D9AF9246307500034893D /* Pager.c */,
 			);
 			path = SimpleDatabase;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				130BED9A2461C462006DB125 /* Table.c in Sources */,
 				135D9AF42462DF3A0034893D /* MetaCommand.c in Sources */,
 				130BED972461C3A6006DB125 /* Row.c in Sources */,
+				135D9AFA246307500034893D /* Pager.c in Sources */,
 				130BED942461C204006DB125 /* InputBuffer.c in Sources */,
 				130BED862461725A006DB125 /* main.c in Sources */,
 				135D9AF72462E0330034893D /* Statement.c in Sources */,

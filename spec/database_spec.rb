@@ -1,9 +1,16 @@
 describe 'database' do
-  def run_script(commands)
+  before :all do
     `xcodebuild -project SimpleDatabase.xcodeproj -configuration Debug -target SimpleDatabase ARCHS=x86_64 ONLY_ACTIVE_ARCH=YES`
+    Dir.chdir("./build/Debug/")
+  end
 
+  before do
+    `rm -rf test.db`
+  end
+
+  def run_script(commands)
     raw_output = nil
-    IO.popen("./build/Debug/SimpleDatabase", "r+") do |pipe|
+    IO.popen("./SimpleDatabase test.db", "r+") do |pipe|
       commands.each do |command|
         pipe.puts command
       end
@@ -48,7 +55,7 @@ describe 'database' do
       ".exit",
     ]
     result = run_script(script)
-    expect(result).to match_array([
+    expect(result).to eq([
       "db > Executed.",
       "db > (1, #{long_username}, #{long_email})",
       "Executed.",
@@ -82,6 +89,26 @@ describe 'database' do
     expect(result).to match_array([
       "db > ID must be positive.",
       "db > Executed.",
+      "db > ",
+    ])
+  end
+
+  it 'keeps data after closing connection' do
+    result1 = run_script([
+      "insert 1 user1 person1@example.com",
+      ".exit",
+    ])
+    expect(result1).to match_array([
+      "db > Executed.",
+      "db > ",
+    ])
+    result2 = run_script([
+      "select",
+      ".exit",
+    ])
+    expect(result2).to match_array([
+      "db > (1, user1, person1@example.com)",
+      "Executed.",
       "db > ",
     ])
   end
