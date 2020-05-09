@@ -11,8 +11,8 @@
 
 #include <stdio.h>
 
-#include "Table.h"
-#include "InputBuffer.h"
+typedef struct InputBuffer InputBuffer;
+typedef struct Table Table;
 
 typedef enum {
     META_COMMAND_SUCCESS,

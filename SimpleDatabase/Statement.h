@@ -12,8 +12,9 @@
 #include <stdio.h>
 
 #include "Row.h"
-#include "InputBuffer.h"
-#include "Table.h"
+
+typedef struct InputBuffer InputBuffer;
+typedef struct Table Table;
 
 typedef enum {
     STATEMENT_INSERT,
