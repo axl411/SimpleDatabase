@@ -19,8 +19,8 @@ extern uint32_t ROWS_PER_PAGE(void);
 extern uint32_t TABLE_MAX_ROWS(void);
 
 typedef struct Table {
-    uint32_t num_rows;
     Pager* pager;
+    uint32_t root_page_num;
 } Table;
 
 Table* db_open(const char* filename);

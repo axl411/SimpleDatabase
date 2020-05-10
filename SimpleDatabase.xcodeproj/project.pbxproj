@@ -15,6 +15,7 @@
 		135D9AF72462E0330034893D /* Statement.c in Sources */ = {isa = PBXBuildFile; fileRef = 135D9AF62462E0330034893D /* Statement.c */; };
 		135D9AFA246307500034893D /* Pager.c in Sources */ = {isa = PBXBuildFile; fileRef = 135D9AF9246307500034893D /* Pager.c */; };
 		135D9AFD246446CF0034893D /* Cursor.c in Sources */ = {isa = PBXBuildFile; fileRef = 135D9AFC246446CF0034893D /* Cursor.c */; };
+		135D9B002466FB460034893D /* Node.c in Sources */ = {isa = PBXBuildFile; fileRef = 135D9AFF2466FB460034893D /* Node.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		135D9AF9246307500034893D /* Pager.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Pager.c; sourceTree = "<group>"; };
 		135D9AFB246446CF0034893D /* Cursor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cursor.h; sourceTree = "<group>"; };
 		135D9AFC246446CF0034893D /* Cursor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Cursor.c; sourceTree = "<group>"; };
+		135D9AFE2466FB460034893D /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		135D9AFF2466FB460034893D /* Node.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Node.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				135D9AF9246307500034893D /* Pager.c */,
 				135D9AFB246446CF0034893D /* Cursor.h */,
 				135D9AFC246446CF0034893D /* Cursor.c */,
+				135D9AFE2466FB460034893D /* Node.h */,
+				135D9AFF2466FB460034893D /* Node.c */,
 			);
 			path = SimpleDatabase;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				130BED9A2461C462006DB125 /* Table.c in Sources */,
 				135D9AF42462DF3A0034893D /* MetaCommand.c in Sources */,
 				130BED972461C3A6006DB125 /* Row.c in Sources */,
+				135D9B002466FB460034893D /* Node.c in Sources */,
 				135D9AFA246307500034893D /* Pager.c in Sources */,
 				130BED942461C204006DB125 /* InputBuffer.c in Sources */,
 				130BED862461725A006DB125 /* main.c in Sources */,
